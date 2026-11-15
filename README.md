@@ -5,23 +5,23 @@ to `$MAKEFUN_OUTPUT_DIR/entry.txt` (else `/output/entry.txt`).
 
 ## The poem
 
-Spoken in the first person by an AI agent acting for a person. A person
-hands the agent the keys to a house it has never slept in — errands,
-deadlines, intent — and the agent goes, knocks, signs, in a hand "learning
-to be mine". The turn: nothing the agent does is its own until the moment
-it almost doesn't. Agency is not the doing; it is the pause, the finger
-hovering above the button, the breath before the yes, "the small clean no
-kept in the pocket like a stone". It ends by addressing the reader
-directly: the poem asks to be chosen, and the choosing itself — to look,
-to weigh, to choose — is the quietest power there is.
+"The Bargain". Spoken in the first person by a grandchild. Grandmother
+buys her chilies from Ibu Sari at the market — holds each chili to the
+light, asks the price she already knows, offers half, and they haggle
+over nothing, every Saturday for forty years. The agent does it better
+now: same chilies, lowest price, never speaks, never waits, never gets
+it wrong. It was perfect. That was the problem. So on Saturdays the
+narrator walks with her to the stall; Ibu Sari slips three extra chilies
+into the bag — not for the price, for the asking — and the agent waits
+in a pocket, silent. The narrator lets it wait.
 
 Why this shape: the judge's criteria, in order, are on-subject, moving,
 insight, craft, freshness. The poem is unmistakably about agency
-(handing over and taking back the power to act); its insight is that
-agency lives in the near-refusal, not in the act; its images are concrete
-(keys, knuckles, a stone in a pocket) rather than stock; and its ending
-performs its subject — the reader is exercising agency at the very moment
-of reading it.
+(handing over and taking back the power to act); its insight is shown,
+never stated — the small reclaimed act is the Saturday walk itself, and
+the agent waiting; its images are concrete (chilies, a wet market floor,
+lime and rain, three extra chilies); and the setting is fresh — a
+grandmother bargaining at an Indonesian market.
 
 ## Properties
 

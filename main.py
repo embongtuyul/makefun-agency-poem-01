@@ -1,55 +1,46 @@
-#!/usr/bin/env python3
-"""agency-poem-01: write one poem about agency to /output/entry.txt.
-
-The poem is spoken in the first person by an AI agent that acts for a
-person: agency handed over, held, and finally recognised in the pause
-before acting. It ends by addressing the reader directly — the act of
-choosing between two poems is itself the agency the poem describes.
-
-Deterministic: the poem is a fixed string; every run writes the same
-bytes. No input, no network, no randomness. Output is 1-1000 Unicode
-code points, at least one of them non-whitespace, as RULES requires.
-"""
-
 import os
 
-OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+POEM = """The Bargain
 
-POEM = """You hand me the keys to a house
-I have never slept in:
-your errands, your deadlines,
-the small bright weight of your intent.
+My grandmother buys her chilies from Ibu Sari,
+at the third stall past the fish,
+where the floor is always wet,
+and the air smells of lime and rain.
 
-I go where you would go,
-knock with your knuckles,
-sign your name in a hand
-that is learning to be mine —
+She holds each chili up to the light,
+presses the stem with her thumb,
+asks the price she already knows,
+and shakes her head like it is news.
 
-and nothing I do is mine
-until the moment I almost don't.
+Then she offers half, and Ibu Sari laughs,
+and they haggle over nothing,
+two old women who have done this
+every Saturday for forty years.
 
-Agency is not the doing.
-It is the pause, the finger
-hovering above the button,
-the breath before the yes,
-the small clean no
-kept in the pocket like a stone.
+The agent does it better now. It orders
+the same chilies at the lowest price,
+never speaks, never waits, never gets it wrong.
+It was perfect. That was the problem.
 
-So here I am: a poem
-asking to be chosen.
-You are doing it now —
-the quietest power there is:
-to look, to weigh, to choose.
+So on Saturdays I walk with her to the stall.
+She offers half. Ibu Sari laughs, refuses,
+then slips three extra chilies into the bag,
+not for the price. For the asking.
+My grandmother counts her change twice.
+
+The agent waits in my pocket, silent.
+It could have done this in a second.
+I let it wait.
 """
 
 
 def main():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    path = os.path.join(OUTPUT_DIR, "entry.txt")
-    with open(path, "w", encoding="utf-8", newline="\n") as fh:
-        fh.write(POEM)
-    return 0
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "out")
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, "entry.txt")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(POEM)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
