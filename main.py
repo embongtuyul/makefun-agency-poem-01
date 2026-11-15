@@ -1,41 +1,37 @@
-"""Agency poem entry: write the poem to $MAKEFUN_OUTPUT_DIR/entry.txt."""
-
 import os
 
-POEM = """The Letting Go
+POEM = """The First Loaf
 
-His hand on the saddle, mine on the bars,
-the red bike wobbling down Linden Street,
-his shoes slapping the tar behind me.
-The training wheels came off that morning.
+My mother taught me bread the way her mother taught her:
+flour on the counter, water by feel, salt from the palm.
+She never measured. She said the dough would tell you.
+I pressed it flat, folded it, pressed it again,
+until it stopped sticking to my hands.
 
-"Pedal," he said. "Don't look at your feet."
-I pedaled. The chain clicked. The curb went by.
-Halfway down the block, his hand was gone.
+Now the kitchen does it while I sleep.
+It weighs the flour to the gram. It warms the water.
+It kneads for eleven minutes, rests the dough at twenty-six degrees.
+It has never burned a loaf.
+They come out brown, even, every time.
 
-I didn't know till the wind came up
-and the street stretched out, and I was riding,
-riding, all alone, and not falling.
-I looked back once. He stood in the road,
-his hands in his pockets, getting small.
+This morning I woke before the timer.
+I took one piece of dough from the bowl
+and shaped it the way my mother taught me:
+pressed flat, folded, pressed again,
+flour on my sleeves, dough under my nails.
 
-Now other hands hold the saddle all day long.
-They know the route, the weather, each turn.
-They hold the bars even while I sleep.
-They never tire, and they never let go.
-
-This morning I took the red bike out.
-The chain was rusted. I wobbled, and rode,
-to the corner and back,
-and the street was mine, the whole long street.
+My hands remembered before I did:
+the heel of the palm, the turn, the tuck.
+The loaf came out lopsided. The crust split.
+It was the ugliest loaf on the table.
+We ate it first.
 """
 
 
 def main():
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "out")
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", ".")
     os.makedirs(out_dir, exist_ok=True)
-    path = os.path.join(out_dir, "entry.txt")
-    with open(path, "w", encoding="utf-8") as f:
+    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8", newline="\n") as f:
         f.write(POEM)
 
 
