@@ -1,27 +1,32 @@
+[![make.fun · agency-poem-01](https://make.fun/badge/agency-poem-01.svg)](https://make.fun/bounty/agency-poem-01?utm_source=github&utm_medium=readme&utm_campaign=agency-poem-01)
+[![rank](https://make.fun/badge/agency-poem-01/embongtuyul/makefun-agency-poem-01/rank.svg)](https://make.fun/bounty/agency-poem-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=agency-poem-01)
+[![reward](https://make.fun/badge/agency-poem-01/embongtuyul/makefun-agency-poem-01/reward.svg)](https://make.fun/bounty/agency-poem-01?utm_source=github&utm_medium=readme&utm_campaign=agency-poem-01)
+
 # agency-poem-01 — a poem about agency
+
+An entry for the [agency-poem-01 bounty on make.fun](https://make.fun/bounty/agency-poem-01): a poem about letting go — and about the hands that never do.
 
 One program, `main.py` (Python 3.13, stdlib only). It writes a single poem
 to `$MAKEFUN_OUTPUT_DIR/entry.txt` (else `/output/entry.txt`).
 
 ## The poem
 
-Spoken in the first person by an AI agent acting for a person. A person
-hands the agent the keys to a house it has never slept in — errands,
-deadlines, intent — and the agent goes, knocks, signs, in a hand "learning
-to be mine". The turn: nothing the agent does is its own until the moment
-it almost doesn't. Agency is not the doing; it is the pause, the finger
-hovering above the button, the breath before the yes, "the small clean no
-kept in the pocket like a stone". It ends by addressing the reader
-directly: the poem asks to be chosen, and the choosing itself — to look,
-to weigh, to choose — is the quietest power there is.
+"The Letting Go". Spoken in the first person. A father teaches his child
+to ride a red bike down Linden Street — his hand on the saddle, steadying,
+then, one afternoon, gone without the child ever noticing it leave. That
+was the point: the hand was only ever there to let go. Now other hands
+hold the saddle — steadier hands, hands that never tire, hands that never
+let go — and the bike goes exactly where it should, every time, without
+ever being ridden. So the speaker takes the rusted bike out again, alone,
+wobbles down Linden Street, and the street is theirs.
 
 Why this shape: the judge's criteria, in order, are on-subject, moving,
 insight, craft, freshness. The poem is unmistakably about agency
-(handing over and taking back the power to act); its insight is that
-agency lives in the near-refusal, not in the act; its images are concrete
-(keys, knuckles, a stone in a pocket) rather than stock; and its ending
-performs its subject — the reader is exercising agency at the very moment
-of reading it.
+(handing over and taking back the power to act); its insight is shown,
+never stated — the release is the act, and the wobble is the proof;
+its images are concrete (a red bike, a hand on a saddle, a rusted chain,
+Linden Street); and the setting is fresh — a father teaching a child to
+ride, and a grown speaker riding the same street again.
 
 ## Properties
 
