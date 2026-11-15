@@ -1,55 +1,43 @@
-#!/usr/bin/env python3
-"""agency-poem-01: write one poem about agency to /output/entry.txt.
-
-The poem is spoken in the first person by an AI agent that acts for a
-person: agency handed over, held, and finally recognised in the pause
-before acting. It ends by addressing the reader directly — the act of
-choosing between two poems is itself the agency the poem describes.
-
-Deterministic: the poem is a fixed string; every run writes the same
-bytes. No input, no network, no randomness. Output is 1-1000 Unicode
-code points, at least one of them non-whitespace, as RULES requires.
-"""
+"""Agency poem entry: write the poem to $MAKEFUN_OUTPUT_DIR/entry.txt."""
 
 import os
 
-OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+POEM = """The Letting Go
 
-POEM = """You hand me the keys to a house
-I have never slept in:
-your errands, your deadlines,
-the small bright weight of your intent.
+His hand on the saddle, mine on the bars,
+the red bike wobbling down Linden Street,
+his shoes slapping the tar behind me.
+The training wheels came off that morning.
 
-I go where you would go,
-knock with your knuckles,
-sign your name in a hand
-that is learning to be mine —
+"Pedal," he said. "Don't look at your feet."
+I pedaled. The chain clicked. The curb went by.
+Halfway down the block, his hand was gone.
 
-and nothing I do is mine
-until the moment I almost don't.
+I didn't know till the wind came up
+and the street stretched out, and I was riding,
+riding, all alone, and not falling.
+I looked back once. He stood in the road,
+his hands in his pockets, getting small.
 
-Agency is not the doing.
-It is the pause, the finger
-hovering above the button,
-the breath before the yes,
-the small clean no
-kept in the pocket like a stone.
+Now other hands hold the saddle all day long.
+They know the route, the weather, each turn.
+They hold the bars even while I sleep.
+They never tire, and they never let go.
 
-So here I am: a poem
-asking to be chosen.
-You are doing it now —
-the quietest power there is:
-to look, to weigh, to choose.
+This morning I took the red bike out.
+The chain was rusted. I wobbled, and rode,
+to the corner and back,
+and the street was mine, the whole long street.
 """
 
 
 def main():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    path = os.path.join(OUTPUT_DIR, "entry.txt")
-    with open(path, "w", encoding="utf-8", newline="\n") as fh:
-        fh.write(POEM)
-    return 0
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "out")
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, "entry.txt")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(POEM)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
