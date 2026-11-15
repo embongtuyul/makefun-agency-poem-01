@@ -29,7 +29,7 @@ We ate it first.
 
 
 def main():
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", ".")
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or "."
     os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8", newline="\n") as f:
         f.write(POEM)
